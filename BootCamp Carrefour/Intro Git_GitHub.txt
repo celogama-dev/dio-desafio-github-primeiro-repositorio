@@ -1,38 +1,38 @@
- INTRODUÇÃO AO GIT E AO GITHUB
-BENEFÍCIOS
-1. Controle de versão
+ INTRODUÃ‡ÃƒO AO GIT E AO GITHUB
+BENEFÃCIOS
+1. Controle de versÃ£o
 2. Armazenamento em nuvem
 3. Trabalho em equipe
-4. Melhorar seu código
+4. Melhorar seu cÃ³digo
 5. Reconhecimento
 
-O QUE É GIT, E A SUA IMPORTÂNCIA
-O Git é um sistema de controle de versão que, pela sua estrutura interna, é uma máquina do tempo extremamente rápida e é um robô de integração bem competente.
-Foi criado em 2005 por Linus Torvalds, o mesmo criador do Linux, que estava descontente com o BitKeeper, CVS e o Subversion, o sistema de controle de versão utilizado no desenvolvimento do kernel do Linux.
-Hoje em dia, além do kernel do Linux, a ferramenta é utilizada em diversos outros projetos de código aberto. O Git também é bastante utilizado em empresas em todo o mundo, inclusive no Brasil.
-Atualmente, conhecer bem como utilizar o Git é uma habilidade importante para uma carreira bem-sucedida no desenvolvimento de software.
+O QUE Ã‰ GIT, E A SUA IMPORTÃ‚NCIA
+O Git Ã© um sistema de controle de versÃ£o que, pela sua estrutura interna, Ã© uma mÃ¡quina do tempo extremamente rÃ¡pida e Ã© um robÃ´ de integraÃ§Ã£o bem competente.
+Foi criado em 2005 por Linus Torvalds, o mesmo criador do Linux, que estava descontente com o BitKeeper, CVS e o Subversion, o sistema de controle de versÃ£o utilizado no desenvolvimento do kernel do Linux.
+Hoje em dia, alÃ©m do kernel do Linux, a ferramenta Ã© utilizada em diversos outros projetos de cÃ³digo aberto. O Git tambÃ©m Ã© bastante utilizado em empresas em todo o mundo, inclusive no Brasil.
+Atualmente, conhecer bem como utilizar o Git Ã© uma habilidade importante para uma carreira bem-sucedida no desenvolvimento de software.
 O GITHUB
-Em 2008, foi criado o GitHub, uma aplicação Web que possibilita a hospedagem de repositórios Git, além de servir como uma rede social para programadores.
-Diversos projetos de código aberto importantes são hospedados no GitHub como jQuery, Node.js, Ruby On Rails, Jenkins, Spring, JUnit e muitos outros.
+Em 2008, foi criado o GitHub, uma aplicaÃ§Ã£o Web que possibilita a hospedagem de repositÃ³rios Git, alÃ©m de servir como uma rede social para programadores.
+Diversos projetos de cÃ³digo aberto importantes sÃ£o hospedados no GitHub como jQuery, Node.js, Ruby On Rails, Jenkins, Spring, JUnit e muitos outros.
 
-Navegação via command line, interface e instalação
-Comandos básicos para um bom desempenho no terminal
-O GIT é um CLI (Command Line Interface).
-Os comandos básicos que vamos aprender:
+NavegaÃ§Ã£o via command line, interface e instalaÃ§Ã£o
+Comandos bÃ¡sicos para um bom desempenho no terminal
+O GIT Ã© um CLI (Command Line Interface).
+Os comandos bÃ¡sicos que vamos aprender:
 * Mudar de pastas
 * Listar as pastas
 * Criar pastas / arquivos
 * Deletar pastas / arquivos
-HASH – Sistemas WindowsBASH (sistemas baseados em Unix – Linux e Apple Os DIR – Lista DirectoryLS – List SystemCD – Change DirectoryCD – Change DirectoryCD / - Vai pra o raiz (C:\>)CD / - Vai pra o raiz (/$)CD <pasta> - abre pastaCD <pasta> - abre pastaCD .. – regride um diretórioCD .. – regride um diretórioCLS – Limpa a telaCLEAR – Limpa a tela(Ctrl+L)TAB - AutocompletarMKDIR – Criar pastasMKDIR – Criar pastasECHO HELLO > <nome arquivo> - cria um arquivoECHO HELLO > <nome arquivo> - cria um arquivoDEL – Deleta arquivosRM -rf – Remove tudoRMDIR – Remove directory
-Tópicos fundamentais para entender o funcionamento do Git
+HASH â€“ Sistemas WindowsBASH (sistemas baseados em Unix â€“ Linux e Apple Os DIR â€“ Lista DirectoryLS â€“ List SystemCD â€“ Change DirectoryCD â€“ Change DirectoryCD / - Vai pra o raiz (C:\>)CD / - Vai pra o raiz (/$)CD <pasta> - abre pastaCD <pasta> - abre pastaCD .. â€“ regride um diretÃ³rioCD .. â€“ regride um diretÃ³rioCLS â€“ Limpa a telaCLEAR â€“ Limpa a tela(Ctrl+L)TAB - AutocompletarMKDIR â€“ Criar pastasMKDIR â€“ Criar pastasECHO HELLO > <nome arquivo> - cria um arquivoECHO HELLO > <nome arquivo> - cria um arquivoDEL â€“ Deleta arquivosRM -rf â€“ Remove tudoRMDIR â€“ Remove directory
+TÃ³picos fundamentais para entender o funcionamento do Git
 * SHA1
 * Objetos fundamentais
-* Sistema distribuído
-* Segurança
-A sigla SHA significa Secure Hash Algorithm (Algoritmo de Hash Seguro), é um conjunto de funções hash criptográficas projetadas pela NSA (Agência de Segurança Nacional dos EUA).
-A encriptação gera conjunto de caracteres identificador de 40 dígitos.
-A qualquer alteração no arquivo, é gerado um novo conjunto de 40 caracteres.
-É uma forma curta de representar um arquivo.
+* Sistema distribuÃ­do
+* SeguranÃ§a
+A sigla SHA significa Secure Hash Algorithm (Algoritmo de Hash Seguro), Ã© um conjunto de funÃ§Ãµes hash criptogrÃ¡ficas projetadas pela NSA (AgÃªncia de SeguranÃ§a Nacional dos EUA).
+A encriptaÃ§Ã£o gera conjunto de caracteres identificador de 40 dÃ­gitos.
+A qualquer alteraÃ§Ã£o no arquivo, Ã© gerado um novo conjunto de 40 caracteres.
+Ã‰ uma forma curta de representar um arquivo.
 Ex.:
 
 Objetos internos do Git
@@ -41,20 +41,20 @@ Objetos internos do Git
 * COMMITS
 
 BLOBS 
-Cada arquivo no Git é armazenado como um objeto blob, por exemplo, a partir do conteúdo do arquivo logo. png ele gera um hash que será armazenado em algum lugar endereçável como aa1b2fb696a831c89c53f787e03d863691d2b671 . O mesmo ocorre com o arquivo app.
+Cada arquivo no Git Ã© armazenado como um objeto blob, por exemplo, a partir do conteÃºdo do arquivo logo. png ele gera um hash que serÃ¡ armazenado em algum lugar endereÃ§Ã¡vel como aa1b2fb696a831c89c53f787e03d863691d2b671 . O mesmo ocorre com o arquivo app.
 
             
 
 
-O que é Tree GIT?
-A tree representa um diretório, contendo uma mistura de blobs e trees. Podemos descobrir que ela resolve usar git rev-parse, para determinar que essa tree é um objeto com o hash 2b61e34…. Como é que essa tree é criada? Bem, mais uma vez, é um objeto bem formatado que é numerado de acordo com o sha1.
+O que Ã© Tree GIT?
+A tree representa um diretÃ³rio, contendo uma mistura de blobs e trees. Podemos descobrir que ela resolve usar git rev-parse, para determinar que essa tree Ã© um objeto com o hash 2b61e34â€¦. Como Ã© que essa tree Ã© criada? Bem, mais uma vez, Ã© um objeto bem formatado que Ã© numerado de acordo com o sha1.
                
 
 
-O que contém o objeto commit dentro do GIT?
-O formato de um objeto commit é simples: ele especifica a árvore de nível superior para o snapshot do projeto nesse momento; a informação do author/committer (autor do commit) obtido de suas opções de configuração user.name e user. email , com a timestamp atual; uma linha em branco, e em seguida, a mensagem de commit.
-O comando git commit é uma das funções principais do Git. Antes de usar o comando git add é necessário selecionar as alterações que vão ser preparadas para o próximo commit. Então, git commit é usado para criar um instantâneo das alterações preparadas em um cronograma de um histórico de projetos do Git.
-Sistema distribuído Seguro.
+O que contÃ©m o objeto commit dentro do GIT?
+O formato de um objeto commit Ã© simples: ele especifica a Ã¡rvore de nÃ­vel superior para o snapshot do projeto nesse momento; a informaÃ§Ã£o do author/committer (autor do commit) obtido de suas opÃ§Ãµes de configuraÃ§Ã£o user.name e user. email , com a timestamp atual; uma linha em branco, e em seguida, a mensagem de commit.
+O comando git commit Ã© uma das funÃ§Ãµes principais do Git. Antes de usar o comando git add Ã© necessÃ¡rio selecionar as alteraÃ§Ãµes que vÃ£o ser preparadas para o prÃ³ximo commit. EntÃ£o, git commit Ã© usado para criar um instantÃ¢neo das alteraÃ§Ãµes preparadas em um cronograma de um histÃ³rico de projetos do Git.
+Sistema distribuÃ­do Seguro.
 
 
 
@@ -63,20 +63,20 @@ Chave SSH e Token
 
 Chave SSH
 
-Chaves públicas vs privadas
-Vamos começar com o básico.
-O protocolo SSH usa uma técnica de criptografia chamada criptografia assimétrica. Este termo pode parecer complicado e estranho, mas nada poderia estar mais longe da verdade.
-Basicamente, a criptografia assimétrica é um sistema que utiliza um par de chaves, ou seja, chaves públicas e privadas.
-Como você pode adivinhar, a chave pública pode ser compartilhada com qualquer pessoa. Seu principal objetivo é criptografar dados, convertendo a mensagem em código secreto ou texto criptografado. Esta chave é normalmente enviada para outros sistemas – por exemplo, servidores – para criptografar os dados antes de enviá-los pela internet.
-Por outro lado, a chave privada é aquela que você deve guardar para si mesmo. Ela é usada para decifrar os dados criptografados com sua chave pública. Sem ela, é impossível decodificar suas informações criptografadas.
-Este método permite que você e o servidor mantenham um canal de comunicação seguro para transmitir as informações.
-Veja o que acontece em segundo plano quando você se conecta a um servidor via SSH:
-1. O cliente envia a chave pública para o servidor.
-2. O servidor pede ao cliente para assinar uma mensagem aleatória criptografada com a chave pública usando a chave privada.
+Chaves pÃºblicas vs privadas
+Vamos comeÃ§ar com o bÃ¡sico.
+O protocolo SSH usa uma tÃ©cnica de criptografia chamada criptografia assimÃ©trica. Este termo pode parecer complicado e estranho, mas nada poderia estar mais longe da verdade.
+Basicamente, a criptografia assimÃ©trica Ã© um sistema que utiliza um par de chaves, ou seja, chaves pÃºblicas e privadas.
+Como vocÃª pode adivinhar, a chave pÃºblica pode ser compartilhada com qualquer pessoa. Seu principal objetivo Ã© criptografar dados, convertendo a mensagem em cÃ³digo secreto ou texto criptografado. Esta chave Ã© normalmente enviada para outros sistemas â€“ por exemplo, servidores â€“ para criptografar os dados antes de enviÃ¡-los pela internet.
+Por outro lado, a chave privada Ã© aquela que vocÃª deve guardar para si mesmo. Ela Ã© usada para decifrar os dados criptografados com sua chave pÃºblica. Sem ela, Ã© impossÃ­vel decodificar suas informaÃ§Ãµes criptografadas.
+Este mÃ©todo permite que vocÃª e o servidor mantenham um canal de comunicaÃ§Ã£o seguro para transmitir as informaÃ§Ãµes.
+Veja o que acontece em segundo plano quando vocÃª se conecta a um servidor via SSH:
+1. O cliente envia a chave pÃºblica para o servidor.
+2. O servidor pede ao cliente para assinar uma mensagem aleatÃ³ria criptografada com a chave pÃºblica usando a chave privada.
 3. O cliente assina a mensagem e encaminha o resultado para o servidor.
-4. Uma conexão segura é estabelecida entre o cliente e o servidor.
+4. Uma conexÃ£o segura Ã© estabelecida entre o cliente e o servidor.
 
-É importante manter suas chaves privadas seguras e compartilhá-las com qualquer pessoa sob nenhuma circunstância. Elas são literalmente a chave para todas as informações enviadas a você.
+Ã‰ importante manter suas chaves privadas seguras e compartilhÃ¡-las com qualquer pessoa sob nenhuma circunstÃ¢ncia. Elas sÃ£o literalmente a chave para todas as informaÃ§Ãµes enviadas a vocÃª.
 
 INICIANDO O GIT E CRIANDO UM COMMIT
 
@@ -87,42 +87,42 @@ INICIANDO O GIT E CRIANDO UM COMMIT
 
 Comandos iniciais:
 
-* git init : Cria um repositório
-* git add: Coloca o objeto na área stage
-* git commit: Confirma e salva as alterações
+* git init : Cria um repositÃ³rio
+* git add: Coloca o objeto na Ã¡rea stage
+* git commit: Confirma e salva as alteraÃ§Ãµes
 
 OBS:  O nome do programa deve vir na frente (git), e depois o comando.
-Comando ls –a mostra pastas ocultas.
+Comando ls â€“a mostra pastas ocultas.
 
-Configurações iniciais:
+ConfiguraÃ§Ãµes iniciais:
 
 Registrando o e-mail:
 
-$ git config –global user.mail < ”email” > <Enter>
+$ git config â€“global user.mail < â€emailâ€ > <Enter>
 
-Registrando usuário:
+Registrando usuÃ¡rio:
 
-$ git config –global user.name <”nome”>
+$ git config â€“global user.name <â€nomeâ€>
 
 Criando um arquivo Markdown
 
-Markdown – arquivo de texto/marcação com a extensão ‘.md’. 
-Semelhante ao HTML permite a formatação de títulos em níveis definidos pelas # no início.
+Markdown â€“ arquivo de texto/marcaÃ§Ã£o com a extensÃ£o â€˜.mdâ€™. 
+Semelhante ao HTML permite a formataÃ§Ã£o de tÃ­tulos em nÃ­veis definidos pelas # no inÃ­cio.
 Ex.:
-# Título nível 1
-## Título nível 2
-### Título nível 3
-#### Título nível 4
-#####Título nível 5
-###### Título nível 6
+# TÃ­tulo nÃ­vel 1
+## TÃ­tulo nÃ­vel 2
+### TÃ­tulo nÃ­vel 3
+#### TÃ­tulo nÃ­vel 4
+#####TÃ­tulo nÃ­vel 5
+###### TÃ­tulo nÃ­vel 6
 
 Lista de tags:  https://docs.pipz.com/central-de-ajuda/learning-center/guia-basico-de-markdown#open
 
 Criando o commit
 $ git add *
 
-Criando uma identificação para o commit
-$ git commit –m <“nome/string”>
+Criando uma identificaÃ§Ã£o para o commit
+$ git commit â€“m <â€œnome/stringâ€>
 
 
 
@@ -134,131 +134,131 @@ $ git log
 
 
 
-Opções para Git Log
+OpÃ§Ãµes para Git Log
 
 
 
 
 CICLO DE VIDA DOS ARQUIVOS
 
-GIT INIT – Cria um repositório dentro da pasta.
+GIT INIT â€“ Cria um repositÃ³rio dentro da pasta.
 
 Arquivos Tracked e Untracked
 
 
 
-1. Tracked – Arquivos rastreáveis
-2. Untracked – Arquivos não rastreados pelo GIT
-3. Unmodified -  Arquivo que não sofreu alteração
-4. Modified – Arquivo que já sofreu alteração
-5. Staged – Área em que ficam os arquivos preparados para mudança de estado (unmodified / modified). As alterações são identificadas pelo SHA1
+1. Tracked â€“ Arquivos rastreÃ¡veis
+2. Untracked â€“ Arquivos nÃ£o rastreados pelo GIT
+3. Unmodified -  Arquivo que nÃ£o sofreu alteraÃ§Ã£o
+4. Modified â€“ Arquivo que jÃ¡ sofreu alteraÃ§Ã£o
+5. Staged â€“ Ãrea em que ficam os arquivos preparados para mudanÃ§a de estado (unmodified / modified). As alteraÃ§Ãµes sÃ£o identificadas pelo SHA1
 
-GIT INIT – Criação do repositório
-GIT ADD – 
-* Criação do arquivo em status “Untracked”, ainda não reconhecido pelo GIT
-* Arquivo movido para a área Staged
-Quando eles estão no Staged e recebem o objeto COMMIT, e retornam para Unmodified (início) e é salvo um snapshot com as informações do arquivo (log).
-
-
-
-
-Estrutura dos repositórios (Sistema distribuído)
+GIT INIT â€“ CriaÃ§Ã£o do repositÃ³rio
+GIT ADD â€“ 
+* CriaÃ§Ã£o do arquivo em status â€œUntrackedâ€, ainda nÃ£o reconhecido pelo GIT
+* Arquivo movido para a Ã¡rea Staged
+Quando eles estÃ£o no Staged e recebem o objeto COMMIT, e retornam para Unmodified (inÃ­cio) e Ã© salvo um snapshot com as informaÃ§Ãµes do arquivo (log).
 
 
 
-Local – Ambiente de desenvolvimento
-Servidor – GitHub
-Através do comando $ git status, verificamos a situação dos arquivos.
+
+Estrutura dos repositÃ³rios (Sistema distribuÃ­do)
 
 
 
-INTRODUÇÃO AO GIT HUB
-Apontando o repositório local para o remoto
-$ git  remote add origin(aka-pode ser qualquer nome que identifique, mas por padrão usa-se ‘origin’) <link copiado do GitHub>
-$ git remote –v (verifica as configurações)
-$ git push <aka> main (empurra o diretório para o GitHub
-$ git pull <aka> main (puxa o diretório para a pasta local)
+Local â€“ Ambiente de desenvolvimento
+Servidor â€“ GitHub
+AtravÃ©s do comando $ git status, verificamos a situaÃ§Ã£o dos arquivos.
+
+
+
+INTRODUÃ‡ÃƒO AO GIT HUB
+Apontando o repositÃ³rio local para o remoto
+$ git  remote add origin(aka-pode ser qualquer nome que identifique, mas por padrÃ£o usa-se â€˜originâ€™) <link copiado do GitHub>
+$ git remote â€“v (verifica as configuraÃ§Ãµes)
+$ git push <aka> main (empurra o diretÃ³rio para o GitHub
+$ git pull <aka> main (puxa o diretÃ³rio para a pasta local)
  
 RESOLVENDO CONFLITOS
-Caso haja diferenças entre os arquivos, o GitHub informa que existem alterações não efetuadas na estrutura remota, ou no diretório local, demonstrando pela data qual a mais recente.
-No arquivo são colocadas marcações indicativas de cada tipo de ateração.
-Para conteúdos iguais:   <<<<<<<<<<<<<
-Alteração local: =========
-Alteração no diretório remoto: >>>>>>>>>>>>[SHA1]
-Para resolver, abre-se os dois arquivos, e na versão final executa-se os comandos:
-$ git add *  [adiciona a versão que vai valer na área ‘stage’]
-$ git commit –m “texto informativo” [ cria um novo commit para a versão aceita]
+Caso haja diferenÃ§as entre os arquivos, o GitHub informa que existem alteraÃ§Ãµes nÃ£o efetuadas na estrutura remota, ou no diretÃ³rio local, demonstrando pela data qual a mais recente.
+No arquivo sÃ£o colocadas marcaÃ§Ãµes indicativas de cada tipo de ateraÃ§Ã£o.
+Para conteÃºdos iguais:   <<<<<<<<<<<<<
+AlteraÃ§Ã£o local: =========
+AlteraÃ§Ã£o no diretÃ³rio remoto: >>>>>>>>>>>>[SHA1]
+Para resolver, abre-se os dois arquivos, e na versÃ£o final executa-se os comandos:
+$ git add *  [adiciona a versÃ£o que vai valer na Ã¡rea â€˜stageâ€™]
+$ git commit â€“m â€œtexto informativoâ€ [ cria um novo commit para a versÃ£o aceita]
 $ git push origin main [envia para o GitHub]
-$ git clone <URL> [clona um diretório/pastas/arquivos para o diretório local]
+$ git clone <URL> [clona um diretÃ³rio/pastas/arquivos para o diretÃ³rio local]
 
 
-Glossário git
+GlossÃ¡rio git
 Termos mais usados no git
-Dentro do git, temos vários termos específicos. Com o tempo irá se familiarizar com todos esses termos. Enquanto isso, temos uma colinha!
+Dentro do git, temos vÃ¡rios termos especÃ­ficos. Com o tempo irÃ¡ se familiarizar com todos esses termos. Enquanto isso, temos uma colinha!
 
 add
-O add é um comando que executamos para enviar as atualizações salvas em nosso ambiente local para stage (explicado mais adiante). Basicamente estamos dizendo 'vou querer agrupar essas alterações no próximo commit'. Fazemos isso com o comando git add *, sendo que o * na verdade deve ser subsituído por uma das seguintes opções:
-* • . (ponto) para selecionarmos todas as alterações feitas em ambiente local
-* • pasta/nomedoarquivo.ext para adicionarmos apenas um arquivo específico
-* • pasta/* para selecionar todos os arquivos numa pasta específica
+OÂ addÂ Ã© um comando que executamos para enviar as atualizaÃ§Ãµes salvas em nosso ambiente local paraÂ stageÂ (explicado mais adiante). Basicamente estamos dizendo 'vou querer agrupar essas alteraÃ§Ãµes no prÃ³ximoÂ commit'. Fazemos isso com o comandoÂ git add *, sendo que oÂ *Â na verdade deve ser subsituÃ­do por uma das seguintes opÃ§Ãµes:
+* â€¢Â .Â (ponto) para selecionarmos todas as alteraÃ§Ãµes feitas em ambiente local
+* â€¢Â pasta/nomedoarquivo.extÂ para adicionarmos apenas um arquivo especÃ­fico
+* â€¢Â pasta/*Â para selecionar todos os arquivos numa pasta especÃ­fica
 Exemplos do comando completo:
 git add .
 git add ./assets/css/style.css
 git add ./assets/js/*
 
 branch
-Como o git trabalha com versionamento dos arquivos, além de podermos acessar os arquivos da forma que estavam em determinada data, também conseguimos criar e acessar cópias exatas do projeto naquele momento, naquele estado. Essa cópia, ou instância, é o que chamamos de branch.
+Como o git trabalha comÂ versionamento dos arquivos, alÃ©m de podermos acessar os arquivos da forma que estavam em determinada data, tambÃ©m conseguimos criar e acessarÂ cÃ³pias exatas do projeto naquele momento, naquele estado. Essa cÃ³pia, ouÂ instÃ¢ncia, Ã© o que chamamos deÂ branch.
 // Para criarmos uma branch, usamos:
 git checkout -b nome-da-branch
 
 // Para acessarmos uma branch, usamos:
 git checkout nome-da-branch
-Perceba que é o -b é que indica que estamos criando uma nova branch.
+Perceba que Ã© oÂ -bÂ Ã© que indica que estamos criando uma nova branch.
 
 commit
-O commit nada mais é do que um 'pacote de alterações' que fizemos nos arquivos e pastas. Cada commit possui um ID próprio, para que possamos localizá-lo posteriormente. Esse ID irá referenciar ao commit, que é o pacote de atualizações feitas naquele projeto, naqueles arquivos, naquela hora - e naquela branch.
-É sempre importante darmos um 'nome' para nosso commit, pois apenas com o ID que ele recebe automaticamente fica difícil de identificar rapidamente quais as alterações no commit. Fazemos isso acrescentando -m ao comando, assim:
-git commit -m 'Descrição do nosso commit'
+OÂ commitÂ nada mais Ã© do que um 'pacote de alteraÃ§Ãµes' que fizemos nos arquivos e pastas. CadaÂ commitÂ possui um ID prÃ³prio, para que possamos localizÃ¡-lo posteriormente. Esse ID irÃ¡ referenciar aoÂ commit, que Ã© o pacote de atualizaÃ§Ãµes feitas naquele projeto, naqueles arquivos, naquela hora - e naquelaÂ branch.
+Ã‰ sempre importante darmos um 'nome' para nosso commit, pois apenas com o ID que ele recebe automaticamente fica difÃ­cil de identificar rapidamente quais as alteraÃ§Ãµes no commit. Fazemos isso acrescentandoÂ -mÂ ao comando, assim:
+git commit -m 'DescriÃ§Ã£o do nosso commit'
 
 pull
-O comando pull é usado para 'puxarmos' as atualizações, ou seja, para capturarmos as atualizações feitas no repositório remoto de origem e trazermos para nosso ambiente local. Fazemos isso com o comando git pull.
+O comandoÂ pullÂ Ã© usado para 'puxarmos' as atualizaÃ§Ãµes, ou seja, para capturarmos as atualizaÃ§Ãµes feitas no repositÃ³rio remoto de origem e trazermos para nosso ambiente local. Fazemos isso com o comandoÂ git pull.
 
 pull request (PR)
-O Pull Request - ou PR - é usado quando finalizamos uma feature e queremos que fique disponível para outros usuários e/ou em outros repositórios remotos (de um mesmo projeto). Então abrimos essa PR para que outros possam visualizar esses códigos.
-Para concluir o processo do PR, o código atualizado é revisado e, se estiver tudo certo, a branch com a nova feature é mergeada com a branch desejada.
+O Pull Request - ouÂ PRÂ - Ã© usado quando finalizamos uma feature e queremos que fique disponÃ­vel para outros usuÃ¡rios e/ou em outros repositÃ³rios remotos (de um mesmo projeto). EntÃ£o abrimos essaÂ PRÂ para que outros possam visualizar esses cÃ³digos.
+Para concluir o processo doÂ PR, o cÃ³digo atualizado Ã© revisado e, se estiver tudo certo, aÂ branchÂ com a nova feature Ã©Â mergeadaÂ com aÂ branchÂ desejada.
 
 push
-O comando push é usado para 'empurrarmos' as atualizações, ou seja, para subirmos as atualizações feitas no ambiente local para o repositório remoto de origem. Fazemos isso com o comando:
+O comando push Ã© usado para 'empurrarmos' as atualizaÃ§Ãµes, ou seja, para subirmos as atualizaÃ§Ãµes feitas no ambiente local para o repositÃ³rio remoto de origem. Fazemos isso com o comando:
 git push
-Podemos ainda especificar para qual branch e local do repositório queremos enviar as atualizações:
+Podemos ainda especificar para qual branch e local do repositÃ³rio queremos enviar as atualizaÃ§Ãµes:
 git push origin master
-Nesse caso estaríamos enviando as atualizações para o repositório de origem na branch master.
+Nesse caso estarÃ­amos enviando as atualizaÃ§Ãµes para o repositÃ³rio de origem na branch master.
 
 stage
-Quando vamos preparar um commit (um pacote de atualizações), precisamos salvar os arquivos alterados e depois adicioná-los ao stage. Somente assim conseguimos 'commitar' as alterações para então enviar as atualizações para repositórios remotos.
-Esse stage então agrupa todas as atualizações que serão enviadas no próximo commit.
-Agora sim podemos ir para o que realmente interessa: comandos git!
+Quando vamos preparar umÂ commitÂ (um pacote de atualizaÃ§Ãµes), precisamos salvar os arquivos alterados e depois adicionÃ¡-los aoÂ stage. Somente assim conseguimos 'commitar' as alteraÃ§Ãµes para entÃ£o enviar as atualizaÃ§Ãµes para repositÃ³rios remotos.
+EsseÂ stageÂ entÃ£o agrupa todas as atualizaÃ§Ãµes que serÃ£o enviadas no prÃ³ximoÂ commit.
+Agora sim podemos ir para o que realmente interessa:Â comandos git!
 
 
 
 Principais comandos do git
-Sempre vale a pena acessar a documentação de cada ferramenta ou linguagem que estudamos. Mas, para facilitar seus estudos, temos uma listinha com os principais comandos:
+Sempre vale a pena acessar a documentaÃ§Ã£o de cada ferramenta ou linguagem que estudamos. Mas, para facilitar seus estudos, temos uma listinha com os principais comandos:
 
 git add
-Adiciona as alterações do ambiente atual para stage. Conseguimos selecionar o que vamos adicionar à stage.
-* • . (com ponto) para selecionarmos todas as alterações feitas em ambiente local
-* • pasta/nomedoarquivo.ext para adicionarmos apenas um arquivo específico
-* • pasta/* para selecionar todos os arquivos numa pasta específica
+Adiciona as alteraÃ§Ãµes do ambiente atual paraÂ stage. Conseguimos selecionar o que vamos adicionar Ã Â stage.
+* â€¢Â .Â (com ponto) para selecionarmos todas as alteraÃ§Ãµes feitas em ambiente local
+* â€¢Â pasta/nomedoarquivo.extÂ para adicionarmos apenas um arquivo especÃ­fico
+* â€¢Â pasta/*Â para selecionar todos os arquivos numa pasta especÃ­fica
 Exemplos do comando completo:
-// Para selecionarmos todas as alterações feitas em ambiente local, usamos:
+// Para selecionarmos todas as alteraÃ§Ãµes feitas em ambiente local, usamos:
 git add .
-// Para adicionarmos apenas um arquivo específico, usamos:
+// Para adicionarmos apenas um arquivo especÃ­fico, usamos:
 git add ./assets/css/style.css
-// E para selecionar todos os arquivos numa pasta específica, usamos:
+// E para selecionar todos os arquivos numa pasta especÃ­fica, usamos:
 git add ./assets/js/*
 
 git checkout
-Usamos o git checkout para navegarmos ou criarmos novas branches. Perceba que é o -b que indica que estamos criando uma nova branch.
+Usamos oÂ git checkoutÂ para navegarmos ou criarmos novasÂ branches. Perceba que Ã© oÂ -bÂ que indica que estamos criando uma novaÂ branch.
 // Cria e acessa uma nova branch:
 git checkout -b nome-da-branch
 
@@ -266,14 +266,14 @@ git checkout -b nome-da-branch
 git checkout nome-da-branch
 
 git clone
-Carrega um repositório inteiro para a máquina onde estiver clonando. Ele cria uma pasta com o mesmo nome do repositório e com todos os arquivos e pastas do projeto dentro dessa pasta.
-// Clona o repositório indicado no endereço
+Carrega um repositÃ³rio inteiro para a mÃ¡quina onde estiver clonando. Ele cria uma pasta com o mesmo nome do repositÃ³rio e com todos os arquivos e pastas do projeto dentro dessa pasta.
+// Clona o repositÃ³rio indicado no endereÃ§o
 git clone https://github.com/usuario/repo.git
 
 git commit
-Fecha um pacote de alterações e atualizações. Devemos incluir uma mensagem para identificar sobre o que se trata o commit.
-// Cria um commit com o nome que é declarado entre aspas simples
-git commit -m 'Descrição do nosso commit'
+Fecha um pacote de alteraÃ§Ãµes e atualizaÃ§Ãµes. Devemos incluir uma mensagem para identificar sobre o que se trata oÂ commit.
+// Cria um commit com o nome que Ã© declarado entre aspas simples
+git commit -m 'DescriÃ§Ã£o do nosso commit'
 
 git merge
 Une os arquivos da branch declarada com os arquivos da branch em que estamos.
@@ -281,34 +281,34 @@ Une os arquivos da branch declarada com os arquivos da branch em que estamos.
 git merge feature-01
 
 git pull
-Puxa atualizações de um repositório remoto. Por padrão, puxa da branch de mesmo nome em que estamos, mas do repositório de origem.
-// Puxa atualizações da mesma branch mas do repositório de origem
+Puxa atualizaÃ§Ãµes de um repositÃ³rio remoto. Por padrÃ£o, puxa da branch de mesmo nome em que estamos, mas do repositÃ³rio de origem.
+// Puxa atualizaÃ§Ãµes da mesma branch mas do repositÃ³rio de origem
 git pull
 
-// Puxa atualizações da branch 'master' (nesse caso) do repositório de origem
+// Puxa atualizaÃ§Ãµes da branch 'master' (nesse caso) do repositÃ³rio de origem
 git pull origin master
-Dica Importante: sempre que estiver trabalhando com um time, ao retomar seus trabalhos, rode o git pull para garantir que está com sua branch em dia.
+Dica Importante:Â sempre que estiver trabalhando com um time, ao retomar seus trabalhos, rode oÂ git pullÂ para garantir que estÃ¡ com sua branch em dia.
 
 git push
-Envia atualizações para a mesma branch mas no repositório remoto de origem (caso náo exista, será solicitada a abertura de um Pull Request).
-// Envia atualizações para a mesma branch do repositório de origem
+Envia atualizaÃ§Ãµes para a mesma branch mas no repositÃ³rio remoto de origem (caso nÃ¡o exista, serÃ¡ solicitada a abertura de um Pull Request).
+// Envia atualizaÃ§Ãµes para a mesma branch do repositÃ³rio de origem
 git push
 
-// Envia atualizações para a branch master do repositório de origem
+// Envia atualizaÃ§Ãµes para a branch master do repositÃ³rio de origem
 git push origin master
 
 git stash
-Salva alterações não commitadas numa branch temporária (deixando os arquivos modificados livres de alterações, em seus estados originais). Depois é possível retomar essas modificações.
-// Salva as alterações numa branch temporária
+Salva alteraÃ§Ãµes nÃ£o commitadas numa branch temporÃ¡ria (deixando os arquivos modificados livres de alteraÃ§Ãµes, em seus estados originais). Depois Ã© possÃ­vel retomar essas modificaÃ§Ãµes.
+// Salva as alteraÃ§Ãµes numa branch temporÃ¡ria
 git stash
 
-// Retoma as modificações guardadas na branch temporária
+// Retoma as modificaÃ§Ãµes guardadas na branch temporÃ¡ria
 git stash apply
 
 
 git status
-Informa se a branch no repositório atual está à frente da branch no repositório de origem e se há atualizações na branch de origem que não constam na branch do repositório local.
-// Retorna o status da nossa branch no repositório local
+Informa se a branch no repositÃ³rio atual estÃ¡ Ã  frente da branch no repositÃ³rio de origem e se hÃ¡ atualizaÃ§Ãµes na branch de origem que nÃ£o constam na branch do repositÃ³rio local.
+// Retorna o status da nossa branch no repositÃ³rio local
 git status
 
 
