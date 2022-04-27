@@ -4,10 +4,11 @@
 Sds.
 
 <hr>
-Repositório criado Desafio de Projeto - DIO
-<h3>Desafio de Projeto sobre Git/GitHub da Dio</h3>
+
+<h3>Desafio de Projeto sobre Git/GitHub da <strong>Dio</strong></h3>
 <h3><em>Links Úteis</em></h3>
 [Sintaxe Básica Markdown](https://www.markdownguide.org/basic-systax/)</br>
 [GIT - Comandos, dicas, etc.](https://thewebdev.com.br/git.php)</br>
-[HTTP](https://gamacompt.wordpress.com/)
+[HTTP](https://gamacompt.wordpress.com/)</br>
+[DIO](https://dio.me/)
 
