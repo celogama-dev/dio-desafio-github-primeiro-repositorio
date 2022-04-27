@@ -1,0 +1,332 @@
+﻿ INTRODUÇÃO AO GIT E AO GITHUB
+BENEFÍCIOS
+1. Controle de versão
+2. Armazenamento em nuvem
+3. Trabalho em equipe
+4. Melhorar seu código
+5. Reconhecimento
+
+O QUE É GIT, E A SUA IMPORTÂNCIA
+O Git é um sistema de controle de versão que, pela sua estrutura interna, é uma máquina do tempo extremamente rápida e é um robô de integração bem competente.
+Foi criado em 2005 por Linus Torvalds, o mesmo criador do Linux, que estava descontente com o BitKeeper, CVS e o Subversion, o sistema de controle de versão utilizado no desenvolvimento do kernel do Linux.
+Hoje em dia, além do kernel do Linux, a ferramenta é utilizada em diversos outros projetos de código aberto. O Git também é bastante utilizado em empresas em todo o mundo, inclusive no Brasil.
+Atualmente, conhecer bem como utilizar o Git é uma habilidade importante para uma carreira bem-sucedida no desenvolvimento de software.
+O GITHUB
+Em 2008, foi criado o GitHub, uma aplicação Web que possibilita a hospedagem de repositórios Git, além de servir como uma rede social para programadores.
+Diversos projetos de código aberto importantes são hospedados no GitHub como jQuery, Node.js, Ruby On Rails, Jenkins, Spring, JUnit e muitos outros.
+
+Navegação via command line, interface e instalação
+Comandos básicos para um bom desempenho no terminal
+O GIT é um CLI (Command Line Interface).
+Os comandos básicos que vamos aprender:
+• Mudar de pastas
+• Listar as pastas
+• Criar pastas / arquivos
+• Deletar pastas / arquivos
+HASH – Sistemas WindowsBASH (sistemas baseados em Unix – Linux e Apple Os DIR – Lista DirectoryLS – List SystemCD – Change DirectoryCD – Change DirectoryCD / - Vai pra o raiz (C:\>)CD / - Vai pra o raiz (/$)CD <pasta> - abre pastaCD <pasta> - abre pastaCD .. – regride um diretórioCD .. – regride um diretórioCLS – Limpa a telaCLEAR – Limpa a tela(Ctrl+L)TAB - AutocompletarMKDIR – Criar pastasMKDIR – Criar pastasECHO HELLO > <nome arquivo> - cria um arquivoECHO HELLO > <nome arquivo> - cria um arquivoDEL – Deleta arquivosRM -rf – Remove tudoRMDIR – Remove directory
+Tópicos fundamentais para entender o funcionamento do Git
+• SHA1
+• Objetos fundamentais
+• Sistema distribuído
+• Segurança
+A sigla SHA significa Secure Hash Algorithm (Algoritmo de Hash Seguro), é um conjunto de funções hash criptográficas projetadas pela NSA (Agência de Segurança Nacional dos EUA).
+A encriptação gera conjunto de caracteres identificador de 40 dígitos.
+A qualquer alteração no arquivo, é gerado um novo conjunto de 40 caracteres.
+É uma forma curta de representar um arquivo.
+Ex.:
+
+Objetos internos do Git
+• BLOBS
+• TREES
+• COMMITS
+
+BLOBS 
+Cada arquivo no Git é armazenado como um objeto blob, por exemplo, a partir do conteúdo do arquivo logo. png ele gera um hash que será armazenado em algum lugar endereçável como aa1b2fb696a831c89c53f787e03d863691d2b671 . O mesmo ocorre com o arquivo app.
+
+            
+
+
+O que é Tree GIT?
+A tree representa um diretório, contendo uma mistura de blobs e trees. Podemos descobrir que ela resolve usar git rev-parse, para determinar que essa tree é um objeto com o hash 2b61e34…. Como é que essa tree é criada? Bem, mais uma vez, é um objeto bem formatado que é numerado de acordo com o sha1.
+               
+
+
+O que contém o objeto commit dentro do GIT?
+O formato de um objeto commit é simples: ele especifica a árvore de nível superior para o snapshot do projeto nesse momento; a informação do author/committer (autor do commit) obtido de suas opções de configuração user.name e user. email , com a timestamp atual; uma linha em branco, e em seguida, a mensagem de commit.
+O comando git commit é uma das funções principais do Git. Antes de usar o comando git add é necessário selecionar as alterações que vão ser preparadas para o próximo commit. Então, git commit é usado para criar um instantâneo das alterações preparadas em um cronograma de um histórico de projetos do Git.
+Sistema distribuído Seguro.
+
+
+
+
+Chave SSH e Token
+
+Chave SSH
+
+Chaves públicas vs privadas
+Vamos começar com o básico.
+O protocolo SSH usa uma técnica de criptografia chamada criptografia assimétrica. Este termo pode parecer complicado e estranho, mas nada poderia estar mais longe da verdade.
+Basicamente, a criptografia assimétrica é um sistema que utiliza um par de chaves, ou seja, chaves públicas e privadas.
+Como você pode adivinhar, a chave pública pode ser compartilhada com qualquer pessoa. Seu principal objetivo é criptografar dados, convertendo a mensagem em código secreto ou texto criptografado. Esta chave é normalmente enviada para outros sistemas – por exemplo, servidores – para criptografar os dados antes de enviá-los pela internet.
+Por outro lado, a chave privada é aquela que você deve guardar para si mesmo. Ela é usada para decifrar os dados criptografados com sua chave pública. Sem ela, é impossível decodificar suas informações criptografadas.
+Este método permite que você e o servidor mantenham um canal de comunicação seguro para transmitir as informações.
+Veja o que acontece em segundo plano quando você se conecta a um servidor via SSH:
+1. O cliente envia a chave pública para o servidor.
+2. O servidor pede ao cliente para assinar uma mensagem aleatória criptografada com a chave pública usando a chave privada.
+3. O cliente assina a mensagem e encaminha o resultado para o servidor.
+4. Uma conexão segura é estabelecida entre o cliente e o servidor.
+
+É importante manter suas chaves privadas seguras e compartilhá-las com qualquer pessoa sob nenhuma circunstância. Elas são literalmente a chave para todas as informações enviadas a você.
+
+INICIANDO O GIT E CRIANDO UM COMMIT
+
+• Iniciar o GIT
+• Iniciar o versionamento
+• Criar um commit
+
+
+Comandos iniciais:
+
+* git init : Cria um repositório
+* git add: Coloca o objeto na área stage
+* git commit: Confirma e salva as alterações
+
+OBS:  O nome do programa deve vir na frente (git), e depois o comando.
+Comando ls –a mostra pastas ocultas.
+
+Configurações iniciais:
+
+Registrando o e-mail:
+
+$ git config –global user.mail < ”email” > <Enter>
+
+Registrando usuário:
+
+$ git config –global user.name <”nome”>
+
+Criando um arquivo Markdown
+
+Markdown – arquivo de texto/marcação com a extensão ‘.md’. 
+Semelhante ao HTML permite a formatação de títulos em níveis definidos pelas # no início.
+Ex.:
+# Título nível 1
+## Título nível 2
+### Título nível 3
+#### Título nível 4
+#####Título nível 5
+###### Título nível 6
+
+Lista de tags:  https://docs.pipz.com/central-de-ajuda/learning-center/guia-basico-de-markdown#open
+
+Criando o commit
+$ git add *
+
+Criando uma identificação para o commit
+$ git commit –m <“nome/string”>
+
+
+
+
+
+Listando os commits
+
+$ git log
+
+
+
+Opções para Git Log
+
+
+
+
+CICLO DE VIDA DOS ARQUIVOS
+
+GIT INIT – Cria um repositório dentro da pasta.
+
+Arquivos Tracked e Untracked
+
+
+
+1. Tracked – Arquivos rastreáveis
+2. Untracked – Arquivos não rastreados pelo GIT
+3. Unmodified -  Arquivo que não sofreu alteração
+4. Modified – Arquivo que já sofreu alteração
+5. Staged – Área em que ficam os arquivos preparados para mudança de estado (unmodified / modified). As alterações são identificadas pelo SHA1
+
+GIT INIT – Criação do repositório
+GIT ADD – 
+* Criação do arquivo em status “Untracked”, ainda não reconhecido pelo GIT
+* Arquivo movido para a área Staged
+Quando eles estão no Staged e recebem o objeto COMMIT, e retornam para Unmodified (início) e é salvo um snapshot com as informações do arquivo (log).
+
+
+
+
+Estrutura dos repositórios (Sistema distribuído)
+
+
+
+Local – Ambiente de desenvolvimento
+Servidor – GitHub
+Através do comando $ git status, verificamos a situação dos arquivos.
+
+
+
+Marcelo@DESKTOP-GG6L5LP MINGW64 /c/workspace/livro-receitas (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+Marcelo@DESKTOP-GG6L5LP MINGW64 /c/workspace/livro-receitas (main)
+$ mkdir receitas
+
+Marcelo@DESKTOP-GG6L5LP MINGW64 /c/workspace/livro-receitas (main)
+$ ls
+lasanha.md  receitas/
+
+Marcelo@DESKTOP-GG6L5LP MINGW64 /c/workspace/livro-receitas (main)
+$ mv lasanha.md ./receitas/
+
+Marcelo@DESKTOP-GG6L5LP MINGW64 /c/workspace/livro-receitas (main)
+$
+
+Marcelo@DESKTOP-GG6L5LP MINGW64 /c/workspace/livro-receitas (main)
+$ ls
+receitas/
+
+Marcelo@DESKTOP-GG6L5LP MINGW64 /c/workspace/livro-receitas (main)
+$ cd receitas
+
+Marcelo@DESKTOP-GG6L5LP MINGW64 /c/workspace/livro-receitas/receitas (main)
+$ ls
+lasanha.md
+
+Marcelo@DESKTOP-GG6L5LP MINGW64 /c/workspace/livro-receitas/receitas (main)
+$ cd ..
+
+Marcelo@DESKTOP-GG6L5LP MINGW64 /c/workspace/livro-receitas (main)
+$ git status
+On branch main
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    lasanha.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        receitas/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Marcelo@DESKTOP-GG6L5LP MINGW64 /c/workspace/livro-receitas (main)
+$ git add lasanha.md receitas/
+
+Marcelo@DESKTOP-GG6L5LP MINGW64 /c/workspace/livro-receitas (main)
+$ git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    lasanha.md -> receitas/lasanha.md
+
+
+Marcelo@DESKTOP-GG6L5LP MINGW64 /c/workspace/livro-receitas (main)
+$ git log
+commit 1a582e17b9271774d23067c8c082758af62276eb (HEAD -> main)
+Author: celogama <gamabass960@gmail.com>
+Date:   Mon Apr 25 15:04:45 2022 -0300
+
+    commit inicial
+
+Marcelo@DESKTOP-GG6L5LP MINGW64 /c/workspace/livro-receitas (main)
+$ git commit -m "cria pasta receitas, move arquivo para receitas"
+[main f3876ee] cria pasta receitas, move arquivo para receitas
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename lasanha.md => receitas/lasanha.md (100%)
+
+Marcelo@DESKTOP-GG6L5LP MINGW64 /c/workspace/livro-receitas (main)
+$
+
+Marcelo@DESKTOP-GG6L5LP MINGW64 /c/workspace/livro-receitas (main)
+$ ls
+receitas/
+
+Marcelo@DESKTOP-GG6L5LP MINGW64 /c/workspace/livro-receitas (main)
+$ echo > README.md
+
+Marcelo@DESKTOP-GG6L5LP MINGW64 /c/workspace/livro-receitas (main)
+$ ls
+README.md  receitas/
+
+Marcelo@DESKTOP-GG6L5LP MINGW64 /c/workspace/livro-receitas (main)
+$ git status
+On branch main
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        README.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Marcelo@DESKTOP-GG6L5LP MINGW64 /c/workspace/livro-receitas (main)
+$
+
+Marcelo@DESKTOP-GG6L5LP MINGW64 /c/workspace/livro-receitas (main)
+$ git status
+On branch main
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        README.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Marcelo@DESKTOP-GG6L5LP MINGW64 /c/workspace/livro-receitas (main)
+$ git add *
+warning: LF will be replaced by CRLF in README.md.
+The file will have its original line endings in your working directory
+
+Marcelo@DESKTOP-GG6L5LP MINGW64 /c/workspace/livro-receitas (main)
+$
+
+Marcelo@DESKTOP-GG6L5LP MINGW64 /c/workspace/livro-receitas (main)
+$ ls
+README.md  receitas/
+
+Marcelo@DESKTOP-GG6L5LP MINGW64 /c/workspace/livro-receitas (main)
+$ git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   README.md
+
+
+Marcelo@DESKTOP-GG6L5LP MINGW64 /c/workspace/livro-receitas (main)
+$ git commit -m "adiciona index"
+[main 6f016c7] adiciona index
+ 1 file changed, 5 insertions(+)
+ create mode 100644 README.md
+
+Marcelo@DESKTOP-GG6L5LP MINGW64 /c/workspace/livro-receitas (main)
+$ ^C
+
+Marcelo@DESKTOP-GG6L5LP MINGW64 /c/workspace/livro-receitas (main)
+$
+
+
+INTRODUÇÃO AO GIT HUB
+Apontando o repositório local para o remoto
+$ git  remote add origin(aka-pode ser qualquer nome que identifique, mas por padrão usa-se ‘origin’) <link copiado do GitHub>
+$ git remote –v (verifica as configurações)
+$ git push <aka> main (empurra o diretório para o GitHub
+$ git pull <aka> main (puxa o diretório para a pasta local)
+ 
+RESOLVENDO CONFLITOS
+Caso haja diferenças entre os arquivos, o GitHub informa que existem alterações não efetuadas na estrutura remota, ou no diretório local, demonstrando pela data qual a mais recente.
+No arquivo são colocadas marcações indicativas de cada tipo de ateração.
+Para conteúdos iguais:   <<<<<<<<<<<<<
+Alteração local: =========
+Alteração no diretório remoto: >>>>>>>>>>>>[SHA1]
+Para resolver, abre-se os dois arquivos, e na versão final executa-se os comandos:
+$ git add *  [adiciona a versão que vai valer na área ‘stage’]
+$ git commit –m “texto informativo” [ cria um novo commit para a versão aceita]
+$ git push origin main [envia para o GitHub]
+$ git clone <URL> [clona um diretório/pastas/arquivos para o diretório local]
+
