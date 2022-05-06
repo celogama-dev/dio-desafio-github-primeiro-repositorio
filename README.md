@@ -13,5 +13,3 @@ Sds.
 [HTTP](https://gamacompt.wordpress.com/)</br>
 [DIO](https://dio.me/)
 
-# celogama-jornada-dev
-# celogama-jornada-dev
