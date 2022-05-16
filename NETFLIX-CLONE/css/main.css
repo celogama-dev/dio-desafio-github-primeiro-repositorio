@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --vermelho:#e50914;
+    --preto:#141414;
+}
+
+/*elemento base*/
+body{
+  background: var(--preto);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;  
+  color: white;
+}
+
+
+/*TOP*/
+header .container{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between; 
+}
+
+header .logo{
+    color: var(--vermelho);
+    font-family: 'Arial';Times;
+    font-size: 40px;
+    margin-left: 5px;
+}
+/*Menu*/
+header nav a{
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+/*Filme principal*/
+.filme-principal{
+    font-size: 16px;
+    background-image: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url(../img/background_picard_right.png);
+
+    height: 600px;
+    background-size:cover;
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .titulo{
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 15%;
+}
+
+.filme-principal .descricao{
+        font-size: 1em;
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+
+.botao{
+    cursor: pointer;
+    transition: .3s ease all;
+    color: #ffffff;
+
+    outline: none;
+    border:#fff;
+    font-weight: 700;
+    border-radius: 0.2vw;
+    margin-right: -0.5rem;
+    
+    background-color: rgba(51, 51, 51, 0.889);
+    padding: 0.5rem 2rem;
+    margin-left: 1.5em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao:hover{
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.botoes i {
+    margin-right: 8px;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.container{
+    margin-left: 20px;
+    border-radius: 10%;
+}
+
+.carossel{
+    padding-top: 20px;
+}
+
+.carossel-filmes .owl-carousel .owl-item img {
+    border-radius: 8%;
+}
+
+.carossel-filmes h3 {
+    margin-top: 15px;
+    margin-left: 20px;
+}
+/* Carrossel de videos*/
+.owl-carousel .item-video {
+    height: 300px;
+    background-size: contain;
+}
+
+.owl-carousel {
+    top: 40px;
+}
+
+.owl-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.owl-dot {
+    display: inline-block;
+}
+
+.owl-dot span {
+    width: 11px;
+    height: 11px;
+    background: #fff;
+    border-radius: 50%;
+    display:block;
+    margin: 5px 3px;
+
+}
+
+.owl-dot.active span{
+    background-color: #000;
+}
+
+.carossel-videos h3 {
+margin-top: 50px;
+margin-left: 20px;
+}
+
+.carossel-videos {
+    margin-bottom: 10em;
+}
+
+
+/*  SECTIONS 2 colunas */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 50px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+/*  GRID OF TWO  */
+.span_2_of_2 {
+	width: 100%;
+}
+.span_1_of_2 {
+	width: 49.2%;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.col { 
+		margin: 1% 0 1% 0%;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.span_2_of_2, .span_1_of_2 { width: 100%; }
+}
+
+/*  SECTIONS 3 colunas */
+.section group {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+    align-content: center;
+    text-align: justify;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+/*  GRID OF THREE  */
+.span_3_of_3 { width: 100%; }
+.span_2_of_3 { width: 66.13%; }
+.span_1_of_3 { width: 32.26%; }
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+	.col {  margin: 1% 0 1% 0%; }
+	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+}
+
+/*footer*/
+
+ul {
+ list-style: none;
+ text-decoration: none;   
+}
+/*Classes de imagens*/
+.center{
+    display:block;
+    margin: auto;
+    margin: auto;
+    width: 300px;
+    hight: 300px;    
+}
+
+.poster {
+    box-shadow: 5px 10px 8px #888888;
+}
+
+footer {
+    background-color: #666;
+    color: #F2FFFC;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
