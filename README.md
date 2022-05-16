@@ -13,6 +13,9 @@ Sds.
 [HTTP](https://gamacompt.wordpress.com/)</br>
 [DIO](https://dio.me/)
 
+<<<<<<< HEAD
 # celogama-jornada-dev
 # celogama-jornada-dev
 # aula_bootstrap
+=======
+>>>>>>> d109206b545aee761495a62645e694b0a604e913
